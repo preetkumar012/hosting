@@ -1,6 +1,7 @@
 "use strict"
 const mongoose = require("mongoose");
-const DB = "mongodb://0.0.0.0:27017/e-comm";
+const DB = "mongodb+srv://jewar0123:Avnish1234@cluster0.gcfs3q4.mongodb.net/preet?retryWrites=true&w=majority";
+// const DB="mongodb+srv://jewar0123:Avnish1234@cluster0.gcfs3q4.mongodb.net/preet?retryWrites=true&w=majority"
 mongoose.connect(DB).then(() => {
     setTimeout(() => {
       console.log("database connected successfully");
@@ -10,3 +11,4 @@ mongoose.connect(DB).then(() => {
     console.log({ error: "database is not connected" })
 });
 
+// aHGuZn2WTTOMFBc6
