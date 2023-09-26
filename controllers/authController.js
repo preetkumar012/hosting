@@ -36,12 +36,14 @@ const login = async (req, res) => {
 
 };
 
-const registerUser = async (req, resp) => { 
-  const user = new Product(req.body);
-  const result = await user.save();
-  console.log(result);
-  resp.send(result);
-
+const registerUser=async(req, resp)=>{
+  const user=new Product(req.body);
+  const result= await user.save();
+  if(result){
+    resp.send(result)
+  }else{
+    resp.send({data:"data not found"});
+  }
 }
 
 
